@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color:   rgba(100, 206, 200, 0.384);
+        }
+
+        .top-bar {
+            background-color: rgb(35, 47, 82);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .underline {
+            height: 4px;
+            background-color: #f5e7f0;
+        }
+
+        .menu {
+            background-color: rgb(35, 47, 82);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            gap: 80px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);              
+    transition: transform 0.3s ease;     
+}
+
+
+        .background-icon {
+            background-image: url('imagens/carinhafundo.png');
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            min-height: 400px;
+            position: relative;
+        }
+
+        .background-icon h1 {
+            font-size: 32px;
+            color: #000;
+            margin-right: 50px;
+        }
+
+        .background-icon img {
+            height: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .livro-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .livro-section img {
+            width: 300px;
+            height: auto;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .livro-section img:hover {
+            transform: perspective(1000px) rotateY(0deg) scale(1.05);
+            box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+        }
+
+        .livro-texto {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>✩ Pássaro contra a vidraça ✩</span>
+        </div>
+        <div class="underline"></div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="sinopse.html">Sinopse</a>
+            <a href="personagens.html">Personagens</a>
+            <a href="temasprincipais.html">Temas Principais</a>
+            <a href="autora.html">Autora</a>
+        </nav>
+    </header>
+
+    <div class="livro-section">
+        <img src="imagens/livropcv.png" alt="Capa do livro">
+        <div class="livro-texto">
+            <p>
+                Igor é um adolescente de classe média alta que, aos olhos de muitos, leva uma vida privilegiada. Estuda em uma boa escola, tem uma família estruturada financeiramente, acesso ao que deseja — roupas, tecnologia, dinheiro. No entanto, por trás dessa fachada de conforto, existe um jovem solitário, desconectado emocionalmente dos pais e com um vazio afetivo crescente.
+                <br><br>
+                Sentindo-se deslocado e sem direção, Igor acaba se envolvendo com pessoas e situações que prometem preenchê-lo — mas que, na realidade, o levam a caminhos obscuros. O que começa como uma tentativa de encontrar sentido e pertencimento, transforma-se em uma experiência angustiante, que o coloca em confronto direto com seus medos, suas escolhas e, principalmente, com suas próprias fragilidades.
+                <br><br>
+                A metáfora do “pássaro contra a vidraça” representa a juventude que, ao tentar voar e se libertar, muitas vezes colide com obstáculos invisíveis — expectativas, solidão, pressão familiar, falta de diálogo — que podem causar feridas profundas.                
+            </p>
+        </div>
+    </div>
+</body>
+</html>

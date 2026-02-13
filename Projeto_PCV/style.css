@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(100, 206, 200, 0.384);
+}
+
+.top-bar {
+    background-color: rgb(35, 47, 82);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.underline {
+    height: 4px;
+    background-color: #f5e7f0;
+}
+
+.menu {
+    background-color: rgb(35, 47, 82);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 80px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);             
+    transition: transform 0.3s ease;    
+}
+
+.menu a:first-child:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+main {
+    margin-top: 50px; 
+}
+
+.background-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: flex-start; 
+    padding: 20px 50px 30px 50px; 
+    min-height: 600px;
+    position: relative;
+    background: none;
+    text-align: center;
+}
+
+.background-icon img {
+    height: 400px;
+    margin-bottom: 100px; 
+    flex-shrink: 0;
+    
+    transform-style: preserve-3d;
+    transform: perspective(800px) rotateY(-15deg) rotateX(5deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.background-icon img:hover {
+    transform: perspective(800px) rotateY(0deg) rotateX(0deg) scale(1.05);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.background-icon .subtext {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    line-height: 2.0;
+}
+
+.livro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.livro-section img {
+    width: 300px;
+    height: auto;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateY(-10deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.livro-section img:hover {
+    transform: perspective(1000px) rotateY(0deg) scale(1.05);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+}
+
+.livro-texto {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #333;
+}
+
